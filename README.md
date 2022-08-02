@@ -2,14 +2,19 @@
 
 ## Versiones utilizadas para este challenge:
 
-Version de Python 3.9.13
-Version de Django 3.1.4
+Version de Python 3.9.13    
+
+Version de Django 3.1.4  
 
 ## Librerias instaladas:
-pip install djangorestframework==3.13.1
-pip install django-rest-auth==0.9.5
-pip install django-allauth==0.51.0
-pip install django-filter==22.1
+pip install djangorestframework==3.13.1    
+
+pip install django-rest-auth==0.9.5    
+
+pip install django-allauth==0.51.0  
+ 
+pip install django-filter==22.1  
+
 
 ## Explicación de uso:
 
