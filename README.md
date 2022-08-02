@@ -1,37 +1,22 @@
-# Invera ToDo-List Challenge (Python/Django Jr-SSr)
+# INSTRUCCIONES
 
-El propósito de esta prueba es conocer tu capacidad para crear una pequeña aplicación funcional en un límite de tiempo. A continuación, encontrarás las funciones, los requisitos y los puntos clave que debés tener en cuenta durante el desarrollo.
+## Versiones utilizadas para este challenge:
 
-## Qué queremos que hagas:
+Version de Python 3.9.13
+Version de Django 3.1.4
 
-- El Challenge consiste en crear una aplicación web sencilla que permita a los usuarios crear y mantener una lista de tareas.
-- La entrega del resultado será en un nuevo fork de este repo y deberás hacer una pequeña demo del funcionamiento y desarrollo del proyecto ante un super comité de las más grandes mentes maestras de Invera, o a un par de devs, lo que sea más fácil de conseguir.
-- Podes contactarnos en caso que tengas alguna consulta.
+## Librerias instaladas:
+-pip install djangorestframework==3.13.1
+-pip install django-rest-auth==0.9.5
+-pip install django-allauth==0.51.0
+-pip install django-filter==22.1
 
-## Objetivos:
+## Explicación de uso:
 
-El usuario de la aplicación tiene que ser capaz de:
+Primero es necesario registrarse, para ello se ingresa a la siguiente URL: http://127.0.0.1:8000/rest-auth/registration/
+Al registrarse y loguearse será posible visualizar las tareas, publicarlas, modificarlas y eliminarlas.
+Si no desea registrarse es posible utilizar el usuario 'Admin' con contraseña 'usuario1'.
 
-- Autenticarse
-- Crear una tarea
-- Eliminar una tarea
-- Marcar tareas como completadas
-- Poder ver una lista de todas las tareas existentes
-- Filtrar/buscar tareas por fecha de creación y/o por el contenido de la misma
-
-## Qué evaluamos:
-
-- Desarrollo utilizando Python, Django. No es necesario crear un Front-End, pero sí es necesario tener una API que permita cumplir con los objetivos de arriba.
-- Uso de librerías y paquetes estandares que reduzcan la cantidad de código propio añadido.
-- Calidad y arquitectura de código. Facilidad de lectura y mantenimiento del código. Estándares seguidos.
-- [Bonus] Manejo de logs.
-- [Bonus] Creación de tests (unitarias y de integración)
-- [Bonus] Unificar la solución propuesta en una imagen de Docker por repositorio para poder ser ejecutada en cualquier ambiente (si aplica para full stack).
-
-## Requerimientos de entrega:
-
-- Hacer un fork del proyecto y pushearlo en github. Puede ser privado.
-- La solución debe correr correctamente.
-- El Readme debe contener todas las instrucciones para poder levantar la aplicación, en caso de ser necesario, y explicar cómo se usa.
-- Disponibilidad para realizar una pequeña demo del proyecto al finalizar el challenge.
-- Tiempo para la entrega: Aproximadamente 7 días.
+Para visualizar todas las tareas creadas: http://127.0.0.1:8000/api/tarea/
+Para eliminar o modificar una tarea es necesario identificar el ID y seleccionar el boton DELETE, por ejemplo: http://127.0.0.1:8000/api/tarea/1
+Es posible filtrar tanto por ID, por contenido de la tarea y por fecha de creación.
