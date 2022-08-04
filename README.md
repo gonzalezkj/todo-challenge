@@ -23,5 +23,5 @@ Al registrarse y loguearse será posible visualizar las tareas, publicarlas, mod
 Si no desea registrarse es posible utilizar el usuario 'Admin' con contraseña 'usuario1'.  
 
 Para visualizar todas las tareas creadas: http://127.0.0.1:8000/api/tarea/  
-Para eliminar o modificar una tarea es necesario identificar el ID y seleccionar el boton DELETE, por ejemplo: http://127.0.0.1:8000/api/tarea/1  
+Para eliminar o modificar una tarea es necesario identificar el ID y realizar la accion que desee, por ejemplo: http://127.0.0.1:8000/api/tarea/1  
 Es posible filtrar tanto por ID, por contenido de la tarea y por fecha de creación.  
